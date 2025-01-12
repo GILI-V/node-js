@@ -1,0 +1,21 @@
+{
+  "name": "12",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "debug": "node --inspect 1-server-with-express.js",
+    "start": "nodemon 1-server-with-express.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
