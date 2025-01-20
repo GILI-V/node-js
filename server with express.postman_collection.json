@@ -1,0 +1,33 @@
+{
+	"info": {
+		"_postman_id": "4700ca58-8afd-4798-b361-0269b09c9139",
+		"name": "server with express",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29410639"
+	},
+	"item": [
+		{
+			"name": "get all HelpRequest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/api/HelpRequest",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"HelpRequest"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

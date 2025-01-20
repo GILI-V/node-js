@@ -1,7 +1,7 @@
 {
   "name": "12",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "debug": "node --inspect 1-server-with-express.js",
     "start": "nodemon 1-server-with-express.js",

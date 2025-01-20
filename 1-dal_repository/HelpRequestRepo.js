@@ -1,9 +1,9 @@
 const Repository = require('./Repository');
-const categories = require('../data/helpRequest');
+const HelpRequest = require('../data/helpRequest'); // נתיב נכון למיקום HelpRequest
 
 class HelpRequestRepo extends Repository {
     constructor() {
-        super(HelpRequest);
+        super(HelpRequest); // מעביר את HelpRequest למחלקת האב
     }
 }
 

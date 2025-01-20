@@ -3,6 +3,7 @@ class Repository {
     constructor(data) {
         this.data = data;
     }
+    
     async getAll(query) {
         try {
             return await this.data;
@@ -27,42 +28,42 @@ class Repository {
         }
     }
 
-    async insert(newItem) {
-        try {
-            this.data.push(newItem)
-            item = newItem;
-            if (item) {
-                return new HttpResponse(item);
-            }
-            throw new Error('Something wrong happened');
-        } catch (error) {
-            throw error;
-        }
-    }
+    // async insert(newItem) {
+    //     try {
+    //         this.data.push(newItem)
+    //         item = newItem;
+    //         if (item) {
+    //             return new HttpResponse(item);
+    //         }
+    //         throw new Error('Something wrong happened');
+    //     } catch (error) {
+    //         throw error;
+    //     }
+    // }
 
-    async update(id, data) {
-        try {
-            const item = await this.model.findByIdAndUpdate(id, data, { 'new': true });
-            return new HttpResponse(item);
-        } catch (errors) {
-            throw errors;
-        }
-    }
+    // async update(id, data) {
+    //     try {
+    //         const item = await this.model.findByIdAndUpdate(id, data, { 'new': true });
+    //         return new HttpResponse(item);
+    //     } catch (errors) {
+    //         throw errors;
+    //     }
+    // }
 
-    async delete(id) {
-        try {
-            const item = await this.model.findByIdAndDelete(id);
-            if (!item) {
-                const error = new Error('Item not found');
-                error.statusCode = 404;
-                throw error;
-            } else {
-                return new HttpResponse(item, { 'deleted': true });
-            }
-        } catch (errors) {
-            throw errors;
-        }
-    }
+    // async delete(id) {
+    //     try {
+    //         const item = await this.model.findByIdAndDelete(id);
+    //         if (!item) {
+    //             const error = new Error('Item not found');
+    //             error.statusCode = 404;
+    //             throw error;
+    //         } else {
+    //             return new HttpResponse(item, { 'deleted': true });
+    //         }
+    //     } catch (errors) {
+    //         throw errors;
+    //     }
+    // }
 }
 
 module.exports = Repository;

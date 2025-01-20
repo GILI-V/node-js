@@ -11,7 +11,6 @@ const specialization =
     children: "children"
 }
 const status =
-
 {
     waiting: "waiting",
     treatment: "in treatment",
